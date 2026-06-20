@@ -39,8 +39,6 @@ jobs:
           #mirror: # optional
           # The token used as Authorization header when fetching from the mirror
           #mirror-token: # optional
-      - name: Install
-        run: npm i
       - name: Install dependencies
         run: npm ci
 
