@@ -18,7 +18,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository 📁
+      - name: Checkout1 Repository 📁
         uses: actions/checkout@v4
 
       - name: Setup Node.js ⚙️
