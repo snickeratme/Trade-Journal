@@ -21,7 +21,7 @@ jobs:
     - name: Use Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '20' # Specify your project's Node version
+        node-version: '24' # Specify your project's Node version
 
     # 3. Clean install your project dependencies
     - name: Install dependencies
