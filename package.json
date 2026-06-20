@@ -1,7 +1,7 @@
 {
-  "homepage": "https://snickeratme.github.io/Trade-Journal",
   "name": "sebfutures-journal",
   "version": "1.0.0",
+  "homepage": "https://snickeratme.github.io/Trade-Journal",
   "private": false,
   "scripts": {
     "dev": "vite",
