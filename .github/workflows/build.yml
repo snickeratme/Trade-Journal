@@ -19,7 +19,7 @@ jobs:
 
     # 2. Set up the Node.js environment
     - name: Use Node.js
-      uses: actions/setup-node@6.4
+      uses: actions/setup-node@6.4.0
       with:
         node-version: '24' # Specify your project's Node version
 
