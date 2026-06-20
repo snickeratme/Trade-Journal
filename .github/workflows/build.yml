@@ -1,0 +1,32 @@
+name: Node.js Build
+
+# Trigger this workflow whenever code is pushed to the main branch
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    # Use an Ubuntu virtual machine provided by GitHub
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. Download your code onto the runner
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    # 2. Set up the Node.js environment
+    - name: Use Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20' # Specify your project's Node version
+
+    # 3. Clean install your project dependencies
+    - name: Install dependencies
+      run: npm ci
+
+    # 4. Compile and build your application
+    - name: Run build script
+      run: npm run build
