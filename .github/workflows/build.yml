@@ -1,6 +1,16 @@
 name: Build Claude JSX App
 
 on:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+
+
   push:
     branches:
       - main
