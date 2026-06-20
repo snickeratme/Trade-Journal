@@ -37,7 +37,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Change to './build' if your project uses Create React App
-          path: './build' 
+          path: './dist' 
 
       - name: Deploy to GitHub Pages 🚀
         id: deployment
